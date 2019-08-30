@@ -9,3 +9,25 @@ spring:
     url: ${blade.datasource.dev.url}
     username: ${blade.datasource.dev.username}
     password: ${blade.datasource.dev.password}
+  application:
+    name: spring-boot-admin-server
+  boot:
+    admin:
+      context-path: /admin
+
+security:
+  user:
+    name: root
+    password: admin
+management:
+  security:
+    enabled: false
+
+logging:
+  path: logs
+
+info:
+  app:
+    name: "spring-boot-admin-server-8401"
+    description: "spring-boot-admin-server-8401程序"
+    version: "0.0.1"

@@ -28,11 +28,11 @@
             <artifactId>blade-core-cloud</artifactId>
             <version>${blade.tool.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-core-secure</artifactId>
-            <version>${blade.tool.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springblade</groupId>-->
+<!--            <artifactId>blade-core-secure</artifactId>-->
+<!--            <version>${blade.tool.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springblade</groupId>
             <artifactId>blade-core-log</artifactId>
@@ -48,10 +48,19 @@
             <artifactId>blade-core-swagger</artifactId>
             <version>${blade.tool.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.17</version>
+        </dependency>
+
         <!-- MySQL -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.34-bin</version>
             <scope>runtime</scope>
         </dependency>
     </dependencies>

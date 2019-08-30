@@ -1,11 +1,12 @@
 server:
-  port: 80
+  port: 8081
 
 # 需要配置的服务名
 blade:
   service:
     blade-auth: blade-auth
     blade-desk: blade-desk
+    blade-develop: blade-develop
     blade-system: blade-system
 
 spring:
@@ -37,6 +38,11 @@ spring:
         uri: lb://${blade.service.blade-system}
         predicates:
         - Path=/${blade.service.blade-system}/**
+      # 代码生成模块
+      - id: ${blade.service.blade-develop}
+        uri: lb://${blade.service.blade-develop}
+        predicates:
+          - Path=/${blade.service.blade-develop}/**
       discovery:
         locator:
           enabled: true

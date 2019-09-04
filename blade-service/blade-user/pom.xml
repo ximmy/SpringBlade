@@ -53,12 +53,7 @@
         </dependency>
         <dependency>
             <groupId>org.springblade</groupId>
-            <artifactId>blade-system</artifactId>
-            <version>${blade.project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-user</artifactId>
+            <artifactId>blade-log</artifactId>
             <version>${blade.project.version}</version>
         </dependency>
     </dependencies>

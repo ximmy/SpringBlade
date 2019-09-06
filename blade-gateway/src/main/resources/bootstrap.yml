@@ -31,17 +31,17 @@ spring:
         - StripPrefix=1
       # 首页模块
       - id: ${blade.service.blade-desk}
-        uri: lb://${blade.service.blade-user}
+        uri: lb://${blade.service.blade-system}
         predicates:
         - Path=/${blade.service.blade-desk}/**
       # 系统模块
       - id: ${blade.service.blade-system}
-        uri: lb://${blade.service.blade-user}
+        uri: lb://${blade.service.blade-system}
         predicates:
         - Path=/${blade.service.blade-system}/**
       # 代码生成模块
       - id: ${blade.service.blade-develop}
-        uri: lb://${blade.service.blade-user}
+        uri: lb://${blade.service.blade-system}
         predicates:
           - Path=/${blade.service.blade-develop}/**
       discovery:

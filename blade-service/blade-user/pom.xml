@@ -41,21 +41,6 @@
             <artifactId>blade-system-api</artifactId>
             <version>${blade.project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-system</artifactId>
-            <version>${blade.project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-desk</artifactId>
-            <version>${blade.project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-log</artifactId>
-            <version>${blade.project.version}</version>
-        </dependency>
     </dependencies>
 
 </project>

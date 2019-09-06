@@ -17,11 +17,11 @@
     <dependencies>
         <!--Blade-->
 
-        <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-develop</artifactId>
-            <version>${blade.project.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springblade</groupId>-->
+<!--            <artifactId>blade-develop</artifactId>-->
+<!--            <version>${blade.project.version}</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springblade</groupId>
             <artifactId>blade-common</artifactId>

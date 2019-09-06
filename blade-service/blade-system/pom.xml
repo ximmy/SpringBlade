@@ -65,7 +65,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>e org.springblade.system.SystemApplication</mainClass>
+                    <mainClass>org.springblade.system.SystemApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>

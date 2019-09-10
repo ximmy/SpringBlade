@@ -27,8 +27,10 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringCloudApplication
 @EnableFeignClients(AppConstant.BASE_PACKAGES)
-//@ComponentScan
-@ComponentScan(basePackages = {"org.springblade.system.user.controller","org.springblade.system.user.feign","org.springblade.system.user.service.*","org.springblade.system.user.*.*"})
+@ComponentScan(basePackages = {"org.springblade.system.user.controller"})
+@ComponentScan(basePackages = {"org.springblade.system.user.feign"})
+@ComponentScan(basePackages = {"org.springblade.system.user.service.*"})
+@ComponentScan(basePackages = {"org.springblade.system.user.*.*"})
 public class SystemApplication {
 
 	public static void main(String[] args) {

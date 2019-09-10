@@ -45,6 +45,12 @@
             <artifactId>blade-log</artifactId>
             <version>${blade.project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springblade</groupId>
+            <artifactId>blade-user</artifactId>
+            <version>2.2.3</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>

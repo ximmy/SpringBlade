@@ -20,6 +20,7 @@ import org.springblade.core.launch.constant.AppConstant;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Import;
 
 /**
  * 系统模块启动器
@@ -27,7 +28,9 @@ import org.springframework.context.annotation.ComponentScan;
  */
 @SpringCloudApplication
 @EnableFeignClients(AppConstant.BASE_PACKAGES)
-@ComponentScan("org.springblade.*")
+@ComponentScan(basePackages = {"org.springblade.system.user.controller"})
+@ComponentScan(basePackages = {"org.springblade.system.user.feign"})
+@ComponentScan(basePackages = {"org.springblade.system.user.service.*"})
 public class SystemApplication {
 
 	public static void main(String[] args) {

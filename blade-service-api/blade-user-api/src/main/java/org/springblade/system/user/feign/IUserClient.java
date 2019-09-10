@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author Chill
  */
 @FeignClient(
-	value = AppConstant.APPLICATION_USER_NAME
+	value = AppConstant.APPLICATION_SYSTEM_NAME
 )
 public interface IUserClient {
 
